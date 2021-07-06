@@ -1,0 +1,13 @@
+package com.PaymentIntegration.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class HomeController {
+
+	@RequestMapping("/donate")
+	public String donate() {
+		return "payments.html";
+	}
+}
