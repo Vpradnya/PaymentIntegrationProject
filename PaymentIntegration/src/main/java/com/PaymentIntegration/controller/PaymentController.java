@@ -29,7 +29,6 @@ public class PaymentController {
 		
 		
 		String order = orderService.createOrder(amt);
-		System.out.println(order);
 		return order.toString();
 	}
 	
@@ -40,3 +39,4 @@ public class PaymentController {
 		return ResponseEntity.ok(Map.of("msg","updated"));
 	}
 }
+
